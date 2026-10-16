@@ -93,7 +93,7 @@ public static class Extraction
 
     // Uruchamia model dla wszystkich notatek i liczy metryki
     public static async Task<Metrics> EvaluateAsync(
-        OllamaClient client,
+        IClient client,
         string model,
         IReadOnlyList<LabeledNote> notes,
         Func<string, string> buildPrompt,

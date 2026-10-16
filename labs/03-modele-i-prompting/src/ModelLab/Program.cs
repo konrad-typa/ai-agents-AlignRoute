@@ -1,11 +1,22 @@
+
+
+using Microsoft.Extensions.Configuration;
+
 using var http = new HttpClient
 {
     Timeout = TimeSpan.FromMinutes(5)
 };
 
-var client = new OllamaClient(http);
+var configuration = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
+string? token = configuration["PCS_API_KEY"];
+
+IClient client = new PCSClient(http, token);
 
 var experiment = args.FirstOrDefault();
+
 
 switch (experiment)
 {

@@ -2,7 +2,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-public sealed class OllamaClient(HttpClient http)
+public sealed class OllamaClient(HttpClient http) : IClient
 {
     private static readonly JsonSerializerOptions Options = new()
     {
