@@ -1,7 +1,7 @@
 // EXP-04: ekstrakcja danych do JSON i walidacja
 public static class StructuredOutput
 {
-    private const string Model = "gemma3:4b";
+    private const string Model = "gpt-oss_120b";
 
     public static async Task RunAsync(IClient client)
     {

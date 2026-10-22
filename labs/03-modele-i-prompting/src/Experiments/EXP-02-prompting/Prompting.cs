@@ -1,7 +1,7 @@
 // EXP-02: wpływ zero-shot, one-shot i few-shot na jakość ekstrakcji
 public static class Prompting
 {
-    private const string Model = "GLM-5.3-Flash";
+    private const string Model = "gpt-oss_120b";
 
     public static async Task RunAsync(IClient client)
     {

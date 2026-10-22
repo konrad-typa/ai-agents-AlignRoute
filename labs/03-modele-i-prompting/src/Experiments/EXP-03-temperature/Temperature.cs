@@ -4,7 +4,7 @@ using System.Diagnostics;
 public static class Temperature
 {
     // Ten sam model i prompt - zmieniamy tylko temperaturę
-    private const string Model = "gemma3:4b";
+    private const string Model = "gpt-oss_120b";
 
     private const int Repetitions = 5;
 
