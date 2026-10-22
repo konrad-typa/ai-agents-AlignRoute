@@ -7,7 +7,7 @@ public static class ModelComparison
         "qwen3:4b"
     ];
 
-    public static async Task RunAsync(OllamaClient client)
+    public static async Task RunAsync(IClient client)
     {
         foreach (var model in Models)
         {

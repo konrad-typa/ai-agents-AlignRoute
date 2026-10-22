@@ -3,7 +3,7 @@ public static class Prompting
 {
     private const string Model = "gemma3:4b";
 
-    public static async Task RunAsync(OllamaClient client)
+    public static async Task RunAsync(IClient client)
     {
         var examples = TestData.PromptExamples;
 
