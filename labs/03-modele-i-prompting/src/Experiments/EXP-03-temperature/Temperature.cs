@@ -10,7 +10,7 @@ public static class Temperature
 
     private static readonly double[] Temperatures = [0.0, 0.5, 1.0];
 
-    public static async Task RunAsync(OllamaClient client)
+    public static async Task RunAsync(IClient client)
     {
         var notes = TestData.Examples;
 

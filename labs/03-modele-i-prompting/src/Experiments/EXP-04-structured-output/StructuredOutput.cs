@@ -3,7 +3,7 @@ public static class StructuredOutput
 {
     private const string Model = "gemma3:4b";
 
-    public static async Task RunAsync(OllamaClient client)
+    public static async Task RunAsync(IClient client)
     {
         // Format JSON opisany tylko w prompcie vs natywny tryb JSON Schema w Ollama
         var variants = new (string Name, object? Format)[]

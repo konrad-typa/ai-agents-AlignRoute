@@ -1,5 +1,3 @@
-
-
 using Microsoft.Extensions.Configuration;
 
 using var http = new HttpClient
@@ -16,7 +14,6 @@ string? token = configuration["PCS_API_KEY"];
 IClient client = new PCSClient(http, token);
 
 var experiment = args.FirstOrDefault();
-
 
 switch (experiment)
 {
