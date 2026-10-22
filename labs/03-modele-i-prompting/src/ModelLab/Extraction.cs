@@ -21,7 +21,7 @@ public static class Extraction
         required = new[] { "floor", "elevator" }
     };
 
-    public static string Prompt(string note, IEnumerable<LabeledNote>? examples = null)
+    public static string  Prompt(string note, IEnumerable<LabeledNote>? examples = null)
     {
         var examplesSection = examples is null
             ? ""
