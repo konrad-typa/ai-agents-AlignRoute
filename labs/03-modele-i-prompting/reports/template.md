@@ -38,9 +38,9 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 
 | Wariant | Floor accuracy | Elevator accuracy | Exact match |
 |---------|----------------|-------------------|-------------|
-| zero-shot | 100% | 100% | 100% |
-| one-shot | | | |
-| few-shot | 100% | 90% | 90% |
+| zero-shot | 100%           | 100%              | 100%        |
+| one-shot | 100%           | 80%               | 80%         |
+| few-shot | 100%           | 90%               | 90%         |
 
 **Wnioski:**
 
@@ -48,9 +48,9 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 
 | Temperature | Exact match | Powtarzalne notatki |
 |-------------|-------------|---------------------|
-| 0.0 | | |
-| 0.5 | | |
-| 1.0 | | |
+| 0.0 | 90%         | 8/10                |
+| 0.5 | 86%         | 8/10                |
+| 1.0 | 88%         | 8/10                |
 
 **Wnioski:**
 
@@ -58,8 +58,8 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 
 | Wariant | Poprawny JSON | Exact match |
 |---------|---------------|-------------|
-| prompt | | |
-| json-schema | | |
+| prompt | 10/10         | 90%         |
+| json-schema | 10/10          | 100%        |
 
 **Wnioski:**
 
