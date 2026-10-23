@@ -42,7 +42,7 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 | one-shot | 100%           | 80%               | 80%         |
 | few-shot | 100%           | 90%               | 90%         |
 
-**Wnioski:**
+**Wnioski:** Wnioski: Wariant zero-shot okazał się najlepszy, osiągając 100% we wszystkich metrykach. Dodanie przykładów paradoksalnie pogorszyło wyniki, szczególnie dla pola elevator, co sugeruje, że model dobrze rozumie zadanie bez dodatkowego kontekstu.
 
 ## EXP-03 — Temperature
 
@@ -52,7 +52,7 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 | 0.5 | 86%         | 8/10                |
 | 1.0 | 88%         | 8/10                |
 
-**Wnioski:**
+**Wnioski:** Wnioski: Najlepszy wynik uzyskano przy temperature 0.0 (90% exact match), a powtarzalność była identyczna we wszystkich wariantach. Wyższe wartości temperature nieznacznie obniżały dokładność bez żadnych korzyści, dlatego rekomendujemy temperature 0.0.
 
 ## EXP-04 — Structured output — JSON i walidacja
 
@@ -61,7 +61,7 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 | prompt | 10/10         | 90%         |
 | json-schema | 10/10          | 100%        |
 
-**Wnioski:**
+**Wnioski:** Wnioski: Oba warianty generowały poprawny JSON w 100%, jednak json-schema pozwoliło osiągnąć 100% exact match w porównaniu do 90% dla samego promptu. Rekomendujemy stosowanie json-schema jako standardowego podejścia.
 
 ## Najtrudniejsze notatki
 
