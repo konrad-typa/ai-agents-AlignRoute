@@ -1,5 +1,0 @@
-id,note,floor,elevator
-EX-001,"butle są na 1 piętrze",1,null
-EX-002,"Budynek bez windy, lokal na 3p",3,false
-EX-003,"Osiedle Eskadra, kl 8, p. 2",2,null
-EX-004,"Winda towarowa, dostawa na parter",0,true
